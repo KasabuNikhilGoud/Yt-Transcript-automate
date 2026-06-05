@@ -6,7 +6,7 @@ on:
       video_url:
         description: 'YouTube Video URL'
         required: false
-        default: 'https://youtu.be/11Y3B33oCLE?si=08VnZwR-9HpaR-GJ'
+        default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
       languages:
         description: 'Language preferences (comma-separated, e.g., te,hi,en)'
         required: false

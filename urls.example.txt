@@ -1,0 +1,5 @@
+# Example URLs for batch processing
+# Add one YouTube URL per line
+
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://youtube.com/shorts/fVc95xxfg80

@@ -1,5 +1,10 @@
 # Yt-Transcript-automate
 
+[![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub Stars](https://img.shields.io/github/stars/KasabuNikhilGoud/Yt-Transcript-automate?style=social)](https://github.com/KasabuNikhilGoud/Yt-Transcript-automate)
+
 Automated YouTube transcript fetcher with fallback to speech-to-text. Gets existing transcripts instantly or uses OpenAI Whisper for accurate audio transcription. **Supports 50+ languages with auto-detection.**
 
 ## Features
@@ -128,3 +133,15 @@ Examples:
 - Whisper transcription takes ~1-5 minutes depending on video length
 - Works with any language that YouTube and Whisper support
 - No API keys or authentication required
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Star History
+
+If you find this project useful, please give it a star ⭐!

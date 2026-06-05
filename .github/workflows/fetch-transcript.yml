@@ -45,7 +45,7 @@ jobs:
         ls -lh *_transcript.txt 2>/dev/null || echo "No transcript files found"
     
     - name: Upload transcripts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: transcripts

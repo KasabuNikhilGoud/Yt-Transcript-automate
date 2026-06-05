@@ -57,6 +57,17 @@ print(transcript)
 transcript, lang = get_transcript(url, languages=['te', 'hi', 'en'])
 ```
 
+### Batch Processing
+
+```bash
+# Create urls.txt with one URL per line
+# Then run:
+python batch_processor.py urls.txt
+
+# With language preference:
+python batch_processor.py urls.txt te,hi,en
+```
+
 ## Multi-Language Support
 
 ### Supported Languages (50+)

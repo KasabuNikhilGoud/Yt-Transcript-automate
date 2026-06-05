@@ -1,5 +1,6 @@
 *.mp3
 *.mp4
 *_transcript.txt
+urls.txt
 __pycache__/
 *.pyc

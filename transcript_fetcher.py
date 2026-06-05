@@ -9,6 +9,8 @@ def extract_video_id(url):
         return url.split("youtu.be/")[1].split("?")[0]
     elif "youtube.com/watch?v=" in url:
         return url.split("v=")[1].split("&")[0]
+    elif "youtube.com/shorts/" in url:
+        return url.split("shorts/")[1].split("?")[0]
     return url
 
 def get_existing_transcript(video_id, languages=None):

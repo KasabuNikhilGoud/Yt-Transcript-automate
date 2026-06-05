@@ -7,6 +7,7 @@ Automated YouTube transcript fetcher with fallback to speech-to-text. Gets exist
 - ✅ Fetches existing YouTube transcripts (instant & free)
 - ✅ Falls back to Whisper speech-to-text if no transcript exists
 - ✅ **Supports 50+ languages with auto-detection**
+- ✅ **YouTube Shorts support**
 - ✅ Unlimited usage (100% free)
 - ✅ High accuracy transcription
 - ✅ Automatic cleanup of temporary files
@@ -34,6 +35,9 @@ brew install ffmpeg
 ```bash
 # Auto-detect language
 python transcript_fetcher.py "https://www.youtube.com/watch?v=VIDEO_ID"
+
+# YouTube Shorts support
+python transcript_fetcher.py "https://youtube.com/shorts/VIDEO_ID"
 
 # Specify language preference (Telugu, Hindi, then English)
 python transcript_fetcher.py "https://www.youtube.com/watch?v=VIDEO_ID" "te,hi,en"
@@ -83,13 +87,16 @@ python transcript_fetcher.py "https://youtube.com/watch?v=VIDEO" "te,hi,en"
 
 ```bash
 # Quick API test
-python quick_test.py
+python tests/quick_test.py
 
 # Language support test
-python test_languages.py
+python tests/test_languages.py
+
+# YouTube Shorts test
+python tests/test_shorts.py
 
 # Full test suite
-./run_tests.sh
+./tests/run_tests.sh
 ```
 
 ## How It Works
@@ -116,6 +123,7 @@ Examples:
 ## Notes
 
 - Supports 50+ languages with automatic detection
+- YouTube Shorts URLs fully supported
 - First run downloads Whisper model (~140MB)
 - Whisper transcription takes ~1-5 minutes depending on video length
 - Works with any language that YouTube and Whisper support
